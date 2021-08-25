@@ -6,9 +6,9 @@
   box-sizing: border-box;
 }
 
-body {
-  /* overflow: hidden; */
-}
+/* body {
+  overflow: hidden;
+} */
 
 .welcome-page {
   position: relative;
@@ -25,6 +25,11 @@ body {
   background-color: #cddafd;
   height: 100vh;
   width: 100vw;
+  transition: clip-path 4s ease-in;
+}
+
+.welcome-background-one.active {
+  clip-path: polygon(0 0, 1000% 0, 0 140%);
 }
 
 .welcome-background-two {
@@ -46,19 +51,31 @@ body {
   position: absolute;
   top: 35%;
   left: 25%;
+  transition: all 0.4s linear;
+}
+
+.title.active {
+  transform: translateX(-40px);
+  opacity: 0;
 }
 
 .enter {
-  width: 12vw;
+  padding: 10px;
+  width: 14vw;
   position: absolute;
   top: 80%;
   left: 60%;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .enter:hover {
   transform: translateY(-15px);
+}
+
+.enter.active {
+  left: 63%;
+  opacity: 0;
 }
 
 .loader {
@@ -77,27 +94,27 @@ body {
 .anim-shoe:nth-child(1) {
   background: url("https://res.cloudinary.com/dncemocxu/image/upload/v1629912341/sneak-love/chicago-red-black_1_n312jk.png");
   background-size: contain;
-  animation: shoe-left 25s linear;
+  animation: shoe-left 25s linear infinite;
 }
 .anim-shoe:nth-child(2) {
   background: url("https://res.cloudinary.com/dncemocxu/image/upload/v1629913065/sneak-love/grey-red_1_jmhik8.png");
   background-size: contain;
-  animation: shoe-right 25s linear;
+  animation: shoe-right 25s linear infinite;
 }
 .anim-shoe:nth-child(3) {
   background: url("https://res.cloudinary.com/dncemocxu/image/upload/v1629912336/sneak-love/grey-red_isrwng.png");
   background-size: contain;
-  animation: shoe-left 25s linear;
+  animation: shoe-left 25s linear infinite;
 }
 .anim-shoe:nth-child(4) {
   background: url("https://res.cloudinary.com/dncemocxu/image/upload/v1629912340/sneak-love/mocha_1_wfgwhv.png");
   background-size: contain;
-  animation: shoe-right 25s linear;
+  animation: shoe-right 25s linear infinite;
 }
 .anim-shoe:nth-child(5) {
   background: url("https://res.cloudinary.com/dncemocxu/image/upload/v1629912037/sneak-love/obsidian_1_pina59.png");
   background-size: contain;
-  animation: shoe-left 25s linear;
+  animation: shoe-left 25s linear infinite;
 }
 
 @keyframes shoe-left {
@@ -114,5 +131,13 @@ body {
   }
   100% {
     background-position: 2000px 0;
+  }
+}
+
+@keyframes bgMove {
+  0% {
+  }
+  100% {
+    background-color: red;
   }
 }
