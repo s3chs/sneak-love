@@ -7,7 +7,7 @@
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .welcome-page {
@@ -44,9 +44,8 @@ body {
 .title {
   width: 28vw;
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 25%;
-  animation: floating;
 }
 
 .enter {
@@ -60,4 +59,60 @@ body {
 
 .enter:hover {
   transform: translateY(-15px);
+}
+
+.loader {
+  background-color: #cddafd;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.anim-shoe {
+  background-repeat: repeat-y;
+  image-rendering: pixelated;
+  height: 20vh;
+}
+
+.anim-shoe:nth-child(1) {
+  background: url("https://res.cloudinary.com/dncemocxu/image/upload/v1629912341/sneak-love/chicago-red-black_1_n312jk.png");
+  background-size: contain;
+  animation: shoe-left 25s linear;
+}
+.anim-shoe:nth-child(2) {
+  background: url("https://res.cloudinary.com/dncemocxu/image/upload/v1629913065/sneak-love/grey-red_1_jmhik8.png");
+  background-size: contain;
+  animation: shoe-right 25s linear;
+}
+.anim-shoe:nth-child(3) {
+  background: url("https://res.cloudinary.com/dncemocxu/image/upload/v1629912336/sneak-love/grey-red_isrwng.png");
+  background-size: contain;
+  animation: shoe-left 25s linear;
+}
+.anim-shoe:nth-child(4) {
+  background: url("https://res.cloudinary.com/dncemocxu/image/upload/v1629912340/sneak-love/mocha_1_wfgwhv.png");
+  background-size: contain;
+  animation: shoe-right 25s linear;
+}
+.anim-shoe:nth-child(5) {
+  background: url("https://res.cloudinary.com/dncemocxu/image/upload/v1629912037/sneak-love/obsidian_1_pina59.png");
+  background-size: contain;
+  animation: shoe-left 25s linear;
+}
+
+@keyframes shoe-left {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2000px 0;
+  }
+}
+@keyframes shoe-right {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 2000px 0;
+  }
 }
