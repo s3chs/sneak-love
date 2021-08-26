@@ -9,8 +9,11 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-  /* overflow: hidden; */
   background-color: #bee1e6;
 }
 
