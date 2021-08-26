@@ -28,13 +28,10 @@ body {
   background-color: #cddafd;
   height: 100vh;
   width: 100vw;
-  /* transition: clip-path 1s linear; */
 }
 
 .welcome-background-one.active {
   animation: background-out 1.3s linear forwards;
-  /* clip-path: polygon(0% 0, 900% 0, 0 300%); */
-  /* clip-path: polygon(0 0, 70% 0, 70% 100%, 0% 100%); */
 }
 
 @keyframes background-out {
@@ -188,7 +185,7 @@ body {
 }
 
 .box-up:hover {
-width: 27vw;
+  width: 26.2vw;
 }
 
 .box-up.active {
