@@ -116,7 +116,7 @@ body {
 }
 
 .loader {
-  display: block;
+  display: none;
   background-color: #cddafd;
   z-index: 1;
   height: 100vh;
@@ -271,6 +271,7 @@ body {
 @media (max-width: 950px) {
   .raffle-txt {
     top: 30%;
+    font-size: 1.1em;
   }
   .box-up {
     top: 70%;
@@ -310,6 +311,7 @@ body {
 }
 
 .project-desc {
+  /* display: block; */
   position: relative;
   height: 100vh;
   width: 100vw;

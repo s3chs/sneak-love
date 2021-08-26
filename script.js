@@ -14,27 +14,31 @@ boxUp.addEventListener("click", showSneaker);
 
 // Function for entering the website and entering the sneaker prize section
 function enterSite() {
-  raffleSection.style.display = "none";
   bg.classList.add("active");
   enterBtn.classList.add("active");
   title.classList.add("active");
+  // REMOVE THE ENTER BTN FROM DOM FOR THE ANIMATION
   setTimeout(() => {
     enterBtn.style.display = "none";
   }, 400);
+  //
   setTimeout(() => {
     body.style.backgroundColor = "#cddafd";
     welcomePage.style.display = "none";
-    loader.classList.toggle("active");
+    loader.style.display = "block";
     setTimeout(() => {
       loader.classList.toggle("active");
       setTimeout(() => {
-        loader.style.display = "none";
-        raffleSection.style.display = "block";
+        loader.classList.toggle("active");
         setTimeout(() => {
-          raffleSection.classList.add("active");
-        }, 300);
-      }, 700);
-    }, 5000); // CHANGE TIME FOR THE LOADING SNEAKERS TO BE WHATEVER
+          loader.style.display = "none";
+          raffleSection.style.display = "block";
+          setTimeout(() => {
+            raffleSection.classList.add("active");
+          }, 300);
+        }, 600);
+      }, 5000); // CHANGE TIME FOR THE LOADING SNEAKERS TO BE WHATEVER
+    }, 300);
   }, 1600);
 }
 
