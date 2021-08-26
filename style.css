@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100&display=swap");
+
 *,
 ::after,
 ::before {
@@ -6,9 +8,10 @@
   box-sizing: border-box;
 }
 
-/* body {
-  overflow: hidden;
-} */
+body {
+  /* overflow: hidden; */
+  background-color: #bee1e6;
+}
 
 .welcome-page {
   position: relative;
@@ -21,15 +24,30 @@
   z-index: -1;
   position: absolute;
   top: 0;
-  clip-path: polygon(0 0, 100% 0, 0 140%);
+  clip-path: polygon(0 0, 100% 0, 0 140%, 0 100%);
   background-color: #cddafd;
   height: 100vh;
   width: 100vw;
-  transition: clip-path 4s ease-in;
+  /* transition: clip-path 1s linear; */
 }
 
 .welcome-background-one.active {
-  clip-path: polygon(0 0, 1000% 0, 0 140%);
+  animation: background-out 1.3s linear forwards;
+  /* clip-path: polygon(0% 0, 900% 0, 0 300%); */
+  /* clip-path: polygon(0 0, 70% 0, 70% 100%, 0% 100%); */
+}
+
+@keyframes background-out {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 0 140%, 0 100%);
+  }
+  50% {
+    clip-path: polygon(0 0, 60% 0, 60% 100%, 0% 100%);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
 }
 
 .welcome-background-two {
@@ -134,10 +152,62 @@
   }
 }
 
-@keyframes bgMove {
-  0% {
-  }
-  100% {
-    background-color: red;
-  }
+.raffle {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #cddafd;
+}
+
+.raffle-txt {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  text-align: center;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 800;
+  transition: all 0.2s linear;
+}
+
+.raffle-txt.active {
+  opacity: 0;
+}
+
+.box-up {
+  image-rendering: pixelated;
+  width: 25vw;
+  z-index: 18;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.box-up:hover {
+width: 27vw;
+}
+
+.box-up.active {
+  cursor: auto;
+  transform: translate(-80%, -65%);
+  opacity: 0;
+}
+
+.box {
+  image-rendering: pixelated;
+  width: 25vw;
+  z-index: 15;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  transition: width 0.3s ease-in;
+}
+
+.box.active {
+  width: 28vw;
 }
