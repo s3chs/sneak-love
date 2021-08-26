@@ -45,10 +45,15 @@ function showSneaker() {
   raffleTxt.classList.toggle("active");
   setTimeout(() => {
     raffleTxt.classList.toggle("active");
-    raffleTxt.innerHTML = "GOT'EM! <br/>A pair of Jordan 4 Fire Red, now that's a win.";
+    raffleTxt.innerHTML =
+      "GOT'EM! <br/>A pair of Jordan 4 Fire Red, now that's a win.";
     boxUp.style.display = "none";
     setTimeout(() => {
-      
+      raffleTxt.classList.toggle("active");
+      box.classList.add("out");
+      setTimeout(() => {
+        raffleSection.style.display = " none";
+      }, 300);
     }, 3000);
   }, 400);
 }
