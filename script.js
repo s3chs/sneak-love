@@ -53,7 +53,7 @@ function showSneaker() {
       box.classList.add("out");
       setTimeout(() => {
         raffleSection.style.display = " none";
-      }, 300);
+      }, 500);
     }, 3000);
   }, 400);
 }
