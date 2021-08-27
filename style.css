@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
 }
 
 ::-webkit-scrollbar {
@@ -217,6 +218,7 @@ body {
   font-family: "Press Start 2P", cursive;
   font-size: 1.3rem;
   line-height: 2em;
+  font-weight: 100;
   transition: all 0.3s linear;
   color: #fff1e3;
   cursor: default;
@@ -328,8 +330,8 @@ body {
 }
 
 .project-desc-container {
-  width: 70vw;
-  height: 70vh;
+  width: 60vw;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -360,11 +362,11 @@ body {
 .sneak-info {
   text-align: center;
   font-family: "Press Start 2P", cursive;
-  letter-spacing: 0.01em;
   line-height: 2em;
   font-size: 1em;
   margin: 10px;
   color: #fff1e3;
+  font-weight: 50;
   cursor: default;
 }
 
@@ -463,21 +465,106 @@ body {
 }
 
 .container {
+  position: relative;
   flex: none;
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   scroll-snap-align: center;
 }
 
+.rotation-sneaker-info {
+  height: 25vh;
+  text-align: center;
+  width: 60vw;
+  color: black;
+  line-height: 2em;
+  padding-top: 70px;
+}
+
+.rotation-sneaker-info h2 {
+  padding-bottom: 20px;
+}
+
+.beige-font {
+  color: #fff1e3;
+}
+
 .container:nth-of-type(1) {
-  background: lightcyan;
+  background-color: #cddafd;
 }
 .container:nth-of-type(2) {
-  background: pink;
+  background: #ffcad4;
 }
 .container:nth-of-type(3) {
-  background: lightblue;
+  background: #c6ceef;
+}
+.container:nth-of-type(4) {
+  background: #bfdbf7;
+}
+
+.section-title {
+  cursor: default;
+  color: #fff1e3;
+  font-weight: 100;
+}
+
+.info-container {
+  line-height: 2em;
+  font-size: 1em;
+  color: #fff1e3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 60vw;
+  height: 85vh;
+  cursor: default;
+}
+
+.arrow-right {
+  width: 5vw;
+  position: absolute;
+  right: 5%;
+  animation: floating-right 4s ease-in-out infinite;
+}
+
+@keyframes floating-right {
+  0% {
+    right: 5%;
+  }
+  25% {
+    right: 8%;
+  }
+  50% {
+    right: 5%;
+  }
+  75% {
+    right: 8%;
+  }
+  100% {
+    right: 5%;
+  }
+}
+
+.rotation-logo {
+  width: 9vw;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+
+.rotation-img {
+  width: 30vw;
 }
