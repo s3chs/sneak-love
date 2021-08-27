@@ -477,16 +477,16 @@ body {
 }
 
 .rotation-sneaker-info {
-  height: 25vh;
+  height: 25%;
   text-align: center;
-  width: 60vw;
+  width: 60%;
   color: black;
   line-height: 2em;
-  padding-top: 70px;
+  padding-top: 2em;
 }
 
 .rotation-sneaker-info h2 {
-  padding-bottom: 20px;
+  padding-bottom: 2em;
 }
 
 .beige-font {
@@ -513,16 +513,16 @@ body {
 }
 
 .info-container {
-  line-height: 2em;
+  line-height: 2.5em;
   font-size: 1em;
   color: #fff1e3;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  width: 60vw;
-  height: 85vh;
+  justify-content: space-evenly;
+  width: 55vw;
+  height: 90vh;
   cursor: default;
 }
 
@@ -552,7 +552,7 @@ body {
 }
 
 .rotation-logo {
-  width: 9vw;
+  width: 8vw;
   animation: rotate 5s linear infinite;
 }
 
@@ -567,4 +567,93 @@ body {
 
 .rotation-img {
   width: 30vw;
+  animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 950px) {
+  .section-title {
+    width: 80vw;
+  }
+
+  .info-container p {
+    width: 65vw;
+    font-size: 0.8em;
+  }
+
+  .info-container h2 {
+    width: 80vw;
+    font-size: 1.2em;
+  }
+
+  .rotation-img {
+    width: 45vw;
+  }
+
+  .rotation-sneaker-info {
+    width: 80%;
+  }
+
+  .rotation-sneaker-info h2 {
+    font-size: 1.2em;
+  }
+  .rotation-sneaker-info p {
+    line-height: 1.6em;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 550px) {
+  .section-title {
+    width: 80vw;
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+
+  .info-container p {
+    line-height: 2.1em;
+    width: 65vw;
+    font-size: 0.7em;
+  }
+
+  .info-container h2 {
+    width: 80vw;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  .arrow-right {
+    width: 9vw;
+  }
+
+  .rotation-logo {
+    width: 20vw;
+  }
+}
+
+.wishlist:nth-of-type(2){
+  background: #caafaf
+}
+.wishlist:nth-of-type(3){
+  background: #f28482
+}
+.wishlist:nth-of-type(4){
+  background: #bee1e6
 }
