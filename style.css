@@ -646,6 +646,10 @@ body {
   .rotation-logo {
     width: 20vw;
   }
+
+  .rotation-img {
+    width: 65vw;
+  }
 }
 
 .wishlist:nth-of-type(2){
