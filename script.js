@@ -32,10 +32,6 @@ function enterSite() {
         loader.classList.toggle("active");
         setTimeout(() => {
           loader.style.display = "none";
-          raffleSection.style.display = "block";
-          setTimeout(() => {
-            raffleSection.classList.add("active");
-          }, 300);
         }, 600);
       }, 5000); // CHANGE TIME FOR THE LOADING SNEAKERS TO BE WHATEVER
     }, 300);
@@ -52,12 +48,5 @@ function showSneaker() {
     raffleTxt.innerHTML =
       "GOT'EM! <br/>A pair of Jordan 4 Fire Red, now that's a win.";
     boxUp.style.display = "none";
-    setTimeout(() => {
-      raffleTxt.classList.toggle("active");
-      box.classList.add("out");
-      setTimeout(() => {
-        raffleSection.style.display = " none";
-      }, 500);
-    }, 3000);
   }, 400);
 }

@@ -183,12 +183,12 @@ body {
 }
 
 .raffle {
-  display: none;
+  display: block;
   position: relative;
   height: 100vh;
   width: 100vw;
   background-color: #cddafd;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.5s linear;
 }
 
@@ -446,7 +446,7 @@ body {
   }
   .jordan-sml {
     padding-top: 20px;
-    width: 25vw;
+    width: 23vw;
   }
 }
 
@@ -697,7 +697,7 @@ body {
 
 .about-img {
   position: absolute;
-  top: 30%;
+  top: 31%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -712,7 +712,7 @@ body {
   top: 62%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 55vw;
+  width: 60vw;
 }
 
 .about-end-bg {
@@ -734,7 +734,7 @@ body {
   justify-content: center;
 }
 
-.rotation-end-bg {
+.end-bg {
   background-color: #fff1e6;
   height: 5vh;
   width: 100vw;
