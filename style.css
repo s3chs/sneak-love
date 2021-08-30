@@ -318,7 +318,6 @@ body {
 }
 
 .project-desc {
-  /* display: block; */
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -507,9 +506,11 @@ body {
 }
 
 .section-title {
+  text-align: center;
   cursor: default;
   color: #fff1e3;
   font-weight: 100;
+  z-index: 100;
 }
 
 .info-container {
@@ -652,12 +653,126 @@ body {
   }
 }
 
-.wishlist:nth-of-type(2){
-  background: #caafaf
+.wishlist:nth-of-type(2) {
+  background: #caafaf;
 }
-.wishlist:nth-of-type(3){
-  background: #f28482
+.wishlist:nth-of-type(3) {
+  background: #f28482;
 }
-.wishlist:nth-of-type(4){
-  background: #bee1e6
+.wishlist:nth-of-type(4) {
+  background: #bee1e6;
+}
+
+.about {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #cddafd;
+  z-index: 100;
+}
+
+.about .section-title {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+}
+
+.about-clip {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100vw;
+  clip-path: polygon(50% 0, 100% 0%, 0 60%, 0 30%);
+  background-color: #fff1e6;
+  z-index: -1;
+}
+
+.blue-font {
+  color: #cddafd;
+  position: absolute;
+  top: 14%;
+}
+
+.about-img {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-img img {
+  height: 20vh;
+}
+
+.about-infos {
+  padding-top: 1em;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55vw;
+}
+
+.about-end-bg {
+  position: absolute;
+  bottom: 0%;
+  background-color: #fff1e6;
+  height: 5vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.about-jordans {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotation-end-bg {
+  background-color: #fff1e6;
+  height: 5vh;
+  width: 100vw;
+}
+
+@media (max-width: 950px) {
+  .about-img img {
+    height: 20vh;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .about-img {
+    top: 35%;
+  }
+
+  .about-infos {
+    padding-top: 1em;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;
+  }
+
+  .about-jordans {
+    position: absolute;
+    top: 88%;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-img {
+    top: 38%;
+  }
+  .about-infos {
+    font-size: 0.8em;
+    width: 80vw;
+  }
 }
