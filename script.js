@@ -48,7 +48,7 @@ function enterSite() {
             }, 100);
           }, 100);
         }, 800);
-      }, 5000); // CHANGE TIME FOR THE LOADING SNEAKERS TO BE WHATEVER
+      }, 4000); // CHANGE TIME FOR THE LOADING SNEAKERS TO BE WHATEVER
     }, 300);
   }, 1600);
 }
