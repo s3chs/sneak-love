@@ -188,7 +188,7 @@ body {
 }
 
 .site {
-  display: none;
+  display: block;
 }
 
 .raffle {
@@ -555,6 +555,9 @@ body {
   background: #c6ceef;
 }
 .container:nth-of-type(4) {
+  background: #cdb4db;
+}
+.container:nth-of-type(5) {
   background: #bfdbf7;
 }
 
