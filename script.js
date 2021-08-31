@@ -32,7 +32,7 @@ function enterSite() {
         loader.classList.toggle("active");
         setTimeout(() => {
           loader.style.display = "none";
-        }, 600);
+        }, 1000);
       }, 5000); // CHANGE TIME FOR THE LOADING SNEAKERS TO BE WHATEVER
     }, 300);
   }, 1600);

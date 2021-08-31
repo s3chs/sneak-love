@@ -10,6 +10,11 @@
   font-family: "Press Start 2P", cursive;
 }
 
+h1,
+h2 {
+  letter-spacing: 0.1em;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -201,11 +206,13 @@ body {
   top: 15%;
   left: 50%;
   transform: translate(-50%, -25%);
-  letter-spacing: 0.4em;
+  width: 80vw;
+  letter-spacing: 0.1em;
   text-align: center;
   font-family: "Press Start 2P", cursive;
   color: #fff1e3;
   cursor: default;
+  font-size: 2em;
 }
 
 .raffle-txt {
@@ -290,8 +297,12 @@ body {
 }
 
 @media (max-width: 500px) {
+  .raffle-title {
+    font-size: 1.2em;
+  }
+
   .raffle-txt {
-    top: 25%;
+    top: 30%;
     font-size: 1em;
     width: 80vw;
   }
@@ -624,20 +635,20 @@ body {
 @media (max-width: 550px) {
   .section-title {
     width: 80vw;
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1.5em;
   }
 
   .info-container p {
     line-height: 2.1em;
     width: 65vw;
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
 
   .info-container h2 {
-    width: 80vw;
+    width: 82vw;
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 1.4em;
   }
 
   .arrow-right {
@@ -650,6 +661,14 @@ body {
 
   .rotation-img {
     width: 65vw;
+  }
+
+  .rotation-sneaker-info h2 {
+    font-size: 0.9em;
+  }
+  .rotation-sneaker-info p {
+    line-height: 1.6em;
+    font-size: 0.6em;
   }
 }
 
@@ -673,7 +692,7 @@ body {
 
 .about .section-title {
   position: absolute;
-  top: 15%;
+  top: 14%;
   left: 50%;
   transform: translate(-50%, -15%);
 }
@@ -747,7 +766,6 @@ body {
 }
 
 @media (max-width: 550px) {
-
   .about-img {
     top: 35%;
   }
@@ -774,5 +792,23 @@ body {
   .about-infos {
     font-size: 0.8em;
     width: 80vw;
+  }
+}
+
+@media (max-height: 750px) {
+  p {
+    font-size: 0.8em !important;
+  }
+  h2 {
+    font-size: 1em !important;
+  }
+}
+
+@media (max-height: 650px) {
+  p {
+    font-size: 0.625em !important;
+  }
+  h2 {
+    font-size: 1em !important;
   }
 }
