@@ -103,27 +103,6 @@ body {
   opacity: 0;
 }
 
-@media (max-width: 950px) {
-  .title {
-    width: 50vw;
-    left: 15%;
-  }
-  .enter {
-    width: 25vw;
-  }
-}
-
-@media (max-width: 500px) {
-  .title {
-    width: 65vw;
-    left: 10%;
-  }
-  .enter {
-    width: 45vw;
-    left: 50%;
-  }
-}
-
 .loader {
   display: none;
   background-color: #cddafd;
@@ -188,7 +167,7 @@ body {
 }
 
 .site {
-  display: block;
+  display: none;
 }
 
 .raffle {
@@ -216,7 +195,7 @@ body {
   font-family: "Press Start 2P", cursive;
   color: #fff1e3;
   cursor: default;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .raffle-txt {
@@ -227,7 +206,7 @@ body {
   transform: translate(-50%, -25%);
   text-align: center;
   font-family: "Press Start 2P", cursive;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 2em;
   font-weight: 100;
   transition: all 0.3s linear;
@@ -284,52 +263,6 @@ body {
   opacity: 0;
   left: 40%;
   transform: translate(-40%, -65%);
-}
-
-@media (max-width: 950px) {
-  .raffle-txt {
-    top: 30%;
-    font-size: 1.1em;
-  }
-  .box-up {
-    top: 70%;
-  }
-
-  .box {
-    top: 70%;
-  }
-}
-
-@media (max-width: 500px) {
-  .raffle-title {
-    font-size: 1.2em;
-  }
-
-  .raffle-txt {
-    top: 30%;
-    font-size: 1em;
-    width: 80vw;
-  }
-  .box-up {
-    top: 70%;
-    width: 50vw;
-  }
-
-  .box-up.active {
-    cursor: auto;
-    width: 50vw;
-    opacity: 0;
-  }
-
-  .box {
-    top: 70%;
-    width: 50vw;
-  }
-
-  .box.active {
-    width: 50vw;
-    opacity: 1;
-  }
 }
 
 .project-desc {
@@ -456,53 +389,6 @@ body {
   width: 10vw;
 }
 
-@media (max-width: 950px) {
-  .sneak-info {
-    font-size: 0.8em;
-  }
-  .a-project-for {
-    height: 1.6vh;
-  }
-  .wethenew {
-    height: 2.3vh;
-  }
-  .sneak-small-logo {
-    width: 25vw;
-  }
-  .jordan-sml {
-    padding-top: 20px;
-    width: 15vw;
-  }
-}
-
-@media (max-width: 500px) {
-  .sneak-small-logo {
-    width: 45vw;
-  }
-
-  .sneak-info {
-    font-size: 0.6em;
-  }
-  .a-project-for {
-    top: 1%;
-    left: 1%;
-    height: 1vh;
-  }
-  .wethenew {
-    top: 4%;
-    height: 1.5vh;
-  }
-
-  .project-desc-container {
-    width: 80vw;
-    height: 60vh;
-  }
-  .jordan-sml {
-    padding-top: 20px;
-    width: 23vw;
-  }
-}
-
 .rotation {
   width: 100vw;
   height: 100vh;
@@ -565,7 +451,6 @@ body {
   text-align: center;
   cursor: default;
   color: #fff1e3;
-  font-weight: 100;
   z-index: 100;
 }
 
@@ -642,78 +527,6 @@ body {
   }
   100% {
     transform: translateY(0);
-  }
-}
-
-@media (max-width: 950px) {
-  .section-title {
-    width: 80vw;
-  }
-
-  .info-container p {
-    width: 65vw;
-    font-size: 0.8em;
-  }
-
-  .info-container h2 {
-    width: 80vw;
-    font-size: 1.2em;
-  }
-
-  .rotation-img {
-    width: 45vw;
-  }
-
-  .rotation-sneaker-info {
-    width: 80%;
-  }
-
-  .rotation-sneaker-info h2 {
-    font-size: 1.2em;
-  }
-  .rotation-sneaker-info p {
-    line-height: 1.6em;
-    font-size: 0.8em;
-  }
-}
-
-@media (max-width: 550px) {
-  .section-title {
-    width: 80vw;
-    font-size: 1em;
-    line-height: 1.5em;
-  }
-
-  .info-container p {
-    line-height: 2.1em;
-    width: 65vw;
-    font-size: 0.6em;
-  }
-
-  .info-container h2 {
-    width: 82vw;
-    font-size: 1em;
-    line-height: 1.4em;
-  }
-
-  .arrow-right {
-    width: 9vw;
-  }
-
-  .rotation-logo {
-    width: 20vw;
-  }
-
-  .rotation-img {
-    width: 65vw;
-  }
-
-  .rotation-sneaker-info h2 {
-    font-size: 0.9em;
-  }
-  .rotation-sneaker-info p {
-    line-height: 1.6em;
-    font-size: 0.6em;
   }
 }
 
@@ -804,13 +617,118 @@ body {
   width: 100vw;
 }
 
+/* MEDIA QUERIES */
+
 @media (max-width: 950px) {
+  .title {
+    width: 50vw;
+    left: 15%;
+  }
+  .enter {
+    width: 25vw;
+  }
+
+  .raffle-txt {
+    top: 30%;
+    font-size: 0.8em;
+  }
+  .box-up {
+    top: 70%;
+  }
+
+  .box {
+    top: 70%;
+  }
+
+  .sneak-info {
+    font-size: 0.7em;
+  }
+  .a-project-for {
+    height: 1.6vh;
+  }
+  .wethenew {
+    height: 2.3vh;
+  }
+  .sneak-small-logo {
+    width: 25vw;
+  }
+  .jordan-sml {
+    padding-top: 20px;
+    width: 15vw;
+  }
+
+  .section-title {
+    width: 80vw;
+  }
+
+  .info-container p {
+    width: 65vw;
+    font-size: 0.8em;
+  }
+
+  .info-container h2 {
+    width: 80vw;
+    font-size: 1.2em;
+  }
+
+  .rotation-img {
+    width: 45vw;
+  }
+
+  .rotation-sneaker-info {
+    width: 80%;
+  }
+
+  .rotation-sneaker-info h2 {
+    font-size: 1.2em;
+  }
+  .rotation-sneaker-info p {
+    line-height: 1.6em;
+    font-size: 0.8em;
+  }
   .about-img img {
     height: 20vh;
   }
 }
 
 @media (max-width: 550px) {
+  .section-title {
+    width: 80vw;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  .info-container p {
+    line-height: 2.1em;
+    width: 65vw;
+    font-size: 0.6em;
+  }
+
+  .info-container h2 {
+    width: 82vw;
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+
+  .arrow-right {
+    width: 9vw;
+  }
+
+  .rotation-logo {
+    width: 20vw;
+  }
+
+  .rotation-img {
+    width: 65vw;
+  }
+
+  .rotation-sneaker-info h2 {
+    font-size: 0.9em;
+  }
+  .rotation-sneaker-info p {
+    line-height: 1.6em;
+    font-size: 0.6em;
+  }
   .about-img {
     top: 35%;
   }
@@ -830,6 +748,71 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .title {
+    width: 65vw;
+    left: 10%;
+  }
+  .enter {
+    width: 45vw;
+    left: 50%;
+  }
+  .raffle-title {
+    font-size: 1em;
+  }
+
+  .raffle-txt {
+    top: 30%;
+    font-size: 0.6em;
+    width: 80vw;
+  }
+  .x-up {
+    top: 70%;
+    width: 50vw;
+  }
+
+  .box-up.active {
+    cursor: auto;
+    width: 50vw;
+    opacity: 0;
+  }
+
+  .box {
+    top: 70%;
+    width: 50vw;
+  }
+
+  .box.active {
+    width: 50vw;
+    opacity: 1;
+  }
+  .sneak-small-logo {
+    width: 45vw;
+  }
+
+  .sneak-info {
+    font-size: 0.6em;
+  }
+  .a-project-for {
+    top: 1%;
+    left: 1%;
+    height: 1vh;
+  }
+  .wethenew {
+    top: 4%;
+    height: 1.5vh;
+  }
+
+  .project-desc-container {
+    width: 80vw;
+    height: 60vh;
+  }
+  .jordan-sml {
+    padding-top: 20px;
+    width: 23vw;
+  }
+}
+
 @media (max-width: 375px) {
   .about-img {
     top: 38%;
@@ -840,7 +823,7 @@ body {
   }
 }
 
-/* @media (max-height: 750px) {
+@media (max-height: 550px) {
   p {
     font-size: 0.6em !important;
   }
@@ -848,12 +831,3 @@ body {
     font-size: 1em !important;
   }
 }
-
-@media (max-height: 650px) {
-  p {
-    font-size: 0.6em !important;
-  }
-  h2 {
-    font-size: 1em !important;
-  }
-} */
