@@ -187,6 +187,10 @@ body {
   }
 }
 
+.site {
+  display: none;
+}
+
 .raffle {
   display: block;
   position: relative;
@@ -329,44 +333,70 @@ body {
 }
 
 .project-desc {
+  opacity: 0;
   position: relative;
   height: 100vh;
   width: 100vw;
   background: #cddafd;
   z-index: 500;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.5s linear;
+}
+.project-desc.active {
+  opacity: 1;
 }
 
 .project-desc-container {
+  opacity: 0;
   width: 60vw;
   height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  transition: opacity 0.5s linear;
+}
+
+.project-desc-container.active {
+  opacity: 1;
 }
 
 .triangle {
+  opacity: 0;
   position: absolute;
   top: 0%;
-  left: 0%;
+  left: -50%;
   height: 100vh;
   width: 100vw;
   clip-path: polygon(50% 0, 0 0, 0 30%);
   background-color: #fff1e6;
   z-index: -1;
+  transition: all 0.6s linear;
 }
+
+.triangle.active {
+  opacity: 1;
+  left: 0%;
+}
+
 .triangle-bottom {
+  opacity: 0;
   position: absolute;
   bottom: 0%;
-  left: 0%;
+  left: 50%;
   height: 100vh;
   width: 100vw;
   clip-path: polygon(100% 70%, 50% 100%, 100% 100%);
   background-color: #fff1e6;
   z-index: -1;
+  transition: all 0.6s linear;
+}
+
+.triangle-bottom.active {
+  opacity: 1;
+  left: 0%;
 }
 
 .sneak-info {
@@ -387,19 +417,31 @@ body {
 }
 
 .a-project-for {
+  opacity: 0;
   image-rendering: pixelated;
   height: 2.5vh;
   position: absolute;
   top: 4%;
   left: 2%;
+  transition: opacity 0.5s linear;
+}
+
+.a-project-for.active {
+  opacity: 1;
 }
 
 .wethenew {
+  opacity: 0;
   image-rendering: pixelated;
   height: 3.5vh;
   position: absolute;
   top: 9%;
   left: 2%;
+  transition: opacity 0.5s linear;
+}
+
+.wethenew.active {
+  opacity: 1;
 }
 
 .jordans {
@@ -795,9 +837,9 @@ body {
   }
 }
 
-@media (max-height: 750px) {
+/* @media (max-height: 750px) {
   p {
-    font-size: 0.8em !important;
+    font-size: 0.6em !important;
   }
   h2 {
     font-size: 1em !important;
@@ -806,9 +848,9 @@ body {
 
 @media (max-height: 650px) {
   p {
-    font-size: 0.625em !important;
+    font-size: 0.6em !important;
   }
   h2 {
     font-size: 1em !important;
   }
-}
+} */
